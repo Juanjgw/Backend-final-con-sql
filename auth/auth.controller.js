@@ -17,14 +17,13 @@ const loginController = async (req, res)=> {
    
 }
 
-const registerController = async (req, res) =>{
-    const {email, password} = req.body
-    try{
-        const result = await registerService({email: email, password: password})
-        res.status(200).json(result)
-    }
-    catch(error){
-        res.status(error.status).json(error)
+const registerController = async (req, res) => {
+    const { email, password, confirmPassword } = req.body;
+    try {
+        const result = await registerService({ email, password, confirmPassword });
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
     }
 }
 

@@ -1,68 +1,73 @@
-const { buscarUsuarioPorEmail, insertarUsuario} = require("./auth.repository")
-const bcrypt = require('bcrypt')
-const { validacionUsuario } = require("./utils/validationUser.util")
-const jwt = require('jsonwebtoken')
+// auth.service.js
 
-const registerService = async (usuario) =>{
-    try{
-        const {email, password} = usuario
-        validacionUsuario({email, password})
+const { buscarUsuarioPorEmail, insertarUsuario } = require("./auth.repository");
+const bcrypt = require('bcrypt');
+const { validacionUsuario } = require("./utils/validationUser.util");
+const jwt = require('jsonwebtoken');
 
-        const usuarioExistente = await buscarUsuarioPorEmail(usuario.email) //usuario | null
+const registerService = async (usuario) => {
+    try {
+        const { email, password, confirmPassword } = usuario;
 
-        if(usuarioExistente){
-            throw {status: 400, message: 'ERROR: email ya registrado'}
+        // Validación de usuario, incluyendo confirmación de contraseña
+        validacionUsuario({ email, password, confirmPassword });
+
+        // Verificar si el usuario ya existe
+        const usuarioExistente = await buscarUsuarioPorEmail(email);
+
+        if (usuarioExistente) {
+            throw { status: 400, message: 'ERROR: email ya registrado' };
         }
 
-        const passwordHash = await bcrypt.hash(usuario.password, 10)
-        const result = await insertarUsuario({email: usuario.email, password: passwordHash})
+        // Hashear la contraseña antes de guardarla en la base de datos
+        const passwordHash = await bcrypt.hash(password, 10);
 
-        if(result){
-            return {ok: true, message: 'Se inserto un usuario'}
+        // Insertar usuario con la contraseña hasheada
+        const result = await insertarUsuario({ email, password: passwordHash });
+
+        if (result) {
+            return { ok: true, message: 'Se insertó un usuario' };
         }
-
-    }
-    catch(error){   
-
-        if(error.status){
-            throw error
-        }
-        else{
-            throw {status: 500, message: 'Error interno del servidor'}
-        }
-    }
-}   
-
-
-const loginService = async (usuario) =>{
-    try{
-        const {email, password} = usuario
-        validacionUsuario(usuario)
-        const usuarioExistente = await buscarUsuarioPorEmail(usuario.email)
-        if(!usuarioExistente){
-            throw { status: 400, message: 'No existe usuario con ese email'}
-        }
-
-        const esCorrecta = await bcrypt.compare(password, usuarioExistente.password)
-        if(!esCorrecta){
-            throw { status: 400, message: 'Contraseña incorrecta'}
-        }
-        else{
-            const token = jwt.sign({email, user_id: usuarioExistente.id}, process.env.JWT_SECRET_KEY, {expiresIn: '1h'})
-            return token
+    } catch (error) {
+        if (error.status) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno del servidor' };
         }
     }
-    catch(error){   
+};
 
-        if(error.status){
-            throw error
+const loginService = async (usuario) => {
+    try {
+        const { email, password } = usuario;
+
+        validacionUsuario(usuario);
+
+       
+        const usuarioExistente = await buscarUsuarioPorEmail(email);
+
+        if (!usuarioExistente) {
+            throw { status: 400, message: 'No existe usuario con ese email' };
         }
-        else{
-            throw {status: 500, message: 'Error interno del servidor'}
+
+        // Comparar la contraseña ingresada con la contraseña almacenada hasheada
+        const esCorrecta = await bcrypt.compare(password, usuarioExistente.password);
+
+        if (!esCorrecta) {
+            throw { status: 400, message: 'Contraseña incorrecta' };
+        } else {
+            // Generar token JWT si la contraseña es correcta
+            const token = jwt.sign({ email, user_id: usuarioExistente.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
+            return token;
+        }
+    } catch (error) {
+        if (error.status) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno del servidor' };
         }
     }
-}
+};
 
-
-module.exports = {registerService, loginService}
+module.exports = { registerService, loginService };
 
