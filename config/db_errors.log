@@ -1,0 +1,1798 @@
+[2024-07-05T11:18:20.044Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-05T11:18:22.080Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at handleDisconnect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at Connection.<anonymous> (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:53:13)
+    at Connection.emit (node:events:514:28)
+    at Connection._handleProtocolError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:423:8)
+    at Protocol.emit (node:events:514:28)
+    at Protocol._delegateError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:398:10)
+    at Protocol.handleNetworkError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:371:10)
+[2024-07-05T11:18:22.159Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at handleDisconnect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at Connection.<anonymous> (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:53:13)
+    at Connection.emit (node:events:514:28)
+    at Connection._handleProtocolError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:423:8)
+    at Protocol.emit (node:events:514:28)
+    at Protocol._delegateError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:398:10)
+    at Protocol.handleNetworkError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:371:10)
+[2024-07-05T11:18:24.799Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at Timeout.handleDisconnect [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-05T11:18:26.812Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at Timeout.handleDisconnect [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-05T11:18:28.830Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at Timeout.handleDisconnect [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+    [2024-07-06T14:25:55.397Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:30:35.835Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:35:35.844Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:40:35.896Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:45:35.862Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:50:35.876Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T14:55:35.880Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:00:35.885Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:05:35.898Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:10:35.904Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:15:35.947Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:20:36.544Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:25:36.150Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:30:36.164Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:35:36.171Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:40:36.181Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:45:36.186Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:50:36.188Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T15:55:36.546Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:00:36.399Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:01:53.945Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T16:02:06.611Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T16:05:36.408Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:10:36.411Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:15:36.426Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:20:36.445Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:25:37.105Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:30:36.681Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:35:36.686Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:40:37.044Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:45:36.846Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:50:36.773Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T16:55:36.852Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:00:36.771Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:05:36.775Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:10:36.784Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:15:36.825Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:20:36.798Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:25:36.800Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:30:36.808Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:35:36.868Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:40:36.861Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:45:36.853Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:50:36.863Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:52:30.767Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T17:53:07.296Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T17:55:36.873Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-06T17:56:31.532Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T18:00:31.983Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:41:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-06T18:00:36.869Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-07T04:43:18.356Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at Timeout.keepAlive [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:65:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-07T04:43:31.887Z] Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:212:16)
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:138:13)
+    at Connection.query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:198:25)
+    at node:internal/util:442:7
+    at new Promise (<anonymous>)
+    at Connection.query (node:internal/util:428:12)
+    at query (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:77:31)
+    at buscarUsuarioPorEmail (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.repository.js:9:34)
+    at loginService (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.service.js:47:40)
+    at loginController (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\auth\auth.controller.js:11:29)
+[2024-07-07T15:24:13.147Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:24:13.550Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at handleDisconnect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at Connection.<anonymous> (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:53:13)
+    at Connection.emit (node:events:514:28)
+    at Connection._handleProtocolError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:423:8)
+    at Protocol.emit (node:events:514:28)
+    at Protocol._delegateError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:398:10)
+    at Protocol.handleNetworkError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:371:10)
+[2024-07-07T15:24:13.567Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at handleDisconnect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at Connection.<anonymous> (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:53:13)
+    at Connection.emit (node:events:514:28)
+    at Connection._handleProtocolError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:423:8)
+    at Protocol.emit (node:events:514:28)
+    at Protocol._delegateError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:398:10)
+    at Protocol.handleNetworkError (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:371:10)
+[2024-07-07T15:24:15.657Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at Timeout.handleDisconnect [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-07T15:24:17.672Z] Error: getaddrinfo ENOTFOUND srv848.hstgr.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+    --------------------
+    at Protocol._enqueue (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\node_modules\mysql\lib\Connection.js:116:18)
+    at Timeout.handleDisconnect [as _onTimeout] (C:\Users\juan\Desktop\programacion\app servicios\Backend-final-con-sql\config\connection.sql.js:39:14)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[2024-07-07T15:24:40.008Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:25:00.130Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:25:20.269Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:25:40.808Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:26:00.936Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:26:21.070Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:26:41.206Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:27:01.347Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:27:21.501Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:27:41.634Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:28:01.770Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:28:21.906Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:28:42.042Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:29:02.175Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:29:33.246Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:29:53.736Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:30:13.871Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:30:34.005Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:30:54.140Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:31:14.275Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:31:34.393Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:31:54.527Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:32:33.115Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:32:53.248Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:33:13.376Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:33:33.518Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:33:53.676Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:34:33.225Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:34:53.364Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:35:13.496Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:35:33.632Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:35:53.766Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:36:13.902Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:36:34.041Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:36:54.198Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:37:14.336Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:37:34.469Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:37:54.605Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:38:14.743Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:38:34.886Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:38:55.021Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:39:33.236Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:39:53.380Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:40:13.514Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:40:33.649Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:40:53.788Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:41:13.921Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:41:34.062Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:41:54.201Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:42:14.345Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:42:34.491Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:42:54.624Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:43:14.765Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:43:34.885Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:43:55.015Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:44:33.243Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:44:53.387Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:45:13.525Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:45:33.662Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:45:53.798Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:46:13.939Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:46:34.105Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:46:54.238Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:47:14.375Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:47:34.509Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:47:54.648Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:48:14.782Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:48:34.916Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:48:55.050Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:49:33.250Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:49:53.385Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:50:13.525Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:50:33.680Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:50:53.828Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:51:13.965Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:51:34.102Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:51:54.237Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:52:14.374Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:52:34.685Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:52:55.056Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:53:15.191Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:53:35.324Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:53:55.458Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:54:33.247Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:54:53.382Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:55:13.518Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:55:33.658Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:55:53.792Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:56:13.926Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:56:34.063Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:56:54.231Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:57:14.410Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:57:34.554Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:57:54.686Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:58:14.820Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:58:34.956Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:58:55.092Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:59:33.258Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T15:59:53.403Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:00:13.566Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:00:33.710Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:00:53.855Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:01:13.999Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:01:34.137Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:01:54.271Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:02:14.411Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:02:34.551Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:02:55.002Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:03:15.181Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:03:35.350Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:03:55.519Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:04:33.261Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:04:53.394Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:05:13.533Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:05:33.673Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:05:53.833Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:06:13.999Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:06:34.185Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:06:54.334Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:07:14.489Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:07:34.634Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:07:54.768Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:08:15.398Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:08:35.532Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:08:55.667Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:09:33.284Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:09:53.460Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:10:13.654Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:10:33.811Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:10:53.946Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:11:14.079Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:11:34.217Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:11:54.360Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:12:14.501Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:12:34.684Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:12:54.866Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:13:15.024Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:13:35.165Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:13:55.318Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:14:33.266Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:14:53.400Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:15:13.547Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:15:33.814Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:15:53.980Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:16:14.136Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:16:34.298Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:16:54.457Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:17:14.624Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:17:34.759Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:17:54.892Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:18:15.058Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:18:35.238Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:18:55.381Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:19:33.344Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:19:53.481Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:20:13.620Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:20:33.742Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:20:53.868Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:21:14.006Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:21:34.161Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:21:54.308Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:22:14.462Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:22:34.685Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:22:55.363Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:23:15.533Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:23:35.689Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:23:55.830Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:24:33.342Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:24:53.828Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:25:14.004Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:25:34.150Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:25:54.298Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:26:14.454Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:26:34.606Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:26:54.757Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:27:14.888Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:27:35.024Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:27:55.169Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:28:15.330Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:28:35.490Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:28:55.647Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:29:33.361Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:29:53.524Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:30:13.659Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:30:33.797Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:30:53.966Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:31:14.119Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:31:34.256Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:31:54.389Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:32:14.524Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:32:34.668Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:32:54.829Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:33:15.004Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:33:35.168Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:33:55.335Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:34:33.567Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:34:53.716Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:35:13.854Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:35:34.014Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:35:54.229Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:36:14.417Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:36:34.596Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:36:54.746Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:37:14.884Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:37:35.033Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:37:55.187Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:38:15.342Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:38:35.486Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:38:55.622Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:39:33.581Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:39:53.725Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:40:13.876Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:40:34.139Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:40:54.365Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:41:14.496Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:41:34.638Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:41:54.817Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:42:15.022Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:42:35.188Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:42:55.358Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:43:15.490Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:43:35.627Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:43:55.778Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:44:33.590Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:44:53.747Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:45:13.880Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:45:34.014Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:45:54.155Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:46:14.298Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:46:34.444Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:46:54.601Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:47:14.748Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:47:34.891Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:47:55.044Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:48:15.187Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:48:35.321Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:48:55.509Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:49:33.603Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:49:53.762Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:50:13.913Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:50:34.055Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:50:54.194Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:51:14.335Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:51:34.469Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:51:54.596Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:52:14.962Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:52:35.169Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:52:55.342Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:53:15.488Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:53:35.631Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:53:55.775Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:54:33.596Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:54:53.751Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:55:14.052Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:55:35.759Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:55:55.915Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:56:16.103Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:56:36.235Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:56:56.369Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:57:16.502Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:57:36.744Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:57:56.864Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:58:17.010Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:58:37.145Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:58:57.280Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:59:33.617Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T16:59:53.751Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:00:13.902Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:00:34.066Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:00:54.215Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:01:14.362Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:01:34.506Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:01:54.634Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:02:14.770Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:02:34.915Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:02:55.059Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:03:15.191Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:03:35.337Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:03:55.480Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:04:33.616Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:04:53.760Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:05:13.895Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:05:34.029Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:05:54.174Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:06:14.314Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:06:34.448Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:06:54.590Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:07:14.736Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:07:34.871Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:07:55.006Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:08:15.142Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:08:35.273Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:08:55.425Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:09:33.628Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:09:53.783Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:10:13.926Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:10:34.059Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:10:54.207Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:11:14.351Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:11:34.488Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:11:54.629Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:12:14.782Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:12:34.960Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:12:55.317Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:13:17.008Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:13:37.326Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:13:57.528Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:14:33.634Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:14:53.824Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:15:13.993Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:15:34.148Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:15:54.321Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:16:14.495Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:16:34.658Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:16:54.792Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:17:14.926Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:17:35.046Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:17:55.184Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:18:15.319Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:18:35.451Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:18:55.586Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:19:33.629Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:19:53.779Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:20:13.961Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:20:34.094Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:20:54.241Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:21:14.384Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:21:34.522Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:21:54.641Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:22:14.785Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:22:34.945Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:22:55.090Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:23:15.224Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:23:35.368Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:23:55.512Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:24:33.640Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:24:54.103Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:25:14.239Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:25:34.375Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:25:54.516Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:26:14.670Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:26:34.811Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:26:54.949Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:27:15.084Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:27:35.228Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:27:55.390Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:28:48.248Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:29:08.384Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:29:33.649Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:29:53.786Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:30:13.918Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:30:34.058Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:30:54.195Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:31:14.343Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:31:34.480Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:31:54.619Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:32:14.765Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:32:34.925Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:32:55.072Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:33:15.210Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:33:35.350Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:33:55.484Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:34:33.632Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:34:53.770Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:35:13.903Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:35:34.041Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:35:54.185Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:36:14.320Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:36:34.458Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:36:54.597Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:37:14.740Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:37:34.878Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:37:55.002Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:38:15.155Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:38:35.293Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:38:55.426Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:39:33.658Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:39:53.791Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:40:13.925Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:40:34.065Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:40:54.193Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:41:14.330Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:41:34.466Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:41:54.597Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:42:14.728Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:42:34.865Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:42:54.998Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:43:15.131Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:43:35.263Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:43:55.395Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:44:33.671Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:44:53.806Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:45:13.931Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:45:34.082Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:45:54.230Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:46:14.373Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:46:34.505Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:46:54.646Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:47:14.781Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:47:34.914Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:47:55.027Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:48:15.160Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:48:35.301Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:48:55.459Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:49:33.687Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:49:53.854Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:50:14.010Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:50:34.144Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:50:54.290Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:51:14.445Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:51:34.581Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:51:54.736Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:52:14.926Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:52:35.155Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:52:55.307Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:53:15.445Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:53:35.574Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:53:55.721Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:54:33.820Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:54:53.999Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:55:14.160Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:55:34.381Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:55:54.582Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:56:14.720Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:56:34.856Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:56:54.991Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:57:15.131Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:57:35.269Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:57:55.408Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:58:15.575Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:58:35.863Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:58:56.034Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:59:33.701Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T17:59:53.844Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:00:13.996Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:00:34.142Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:00:54.293Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:01:14.441Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:01:34.573Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:01:54.709Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:02:14.844Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:02:34.981Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:02:55.115Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:03:15.263Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:03:35.424Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:03:55.661Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:04:33.765Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:04:53.906Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:05:14.041Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:05:34.178Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:05:54.327Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:06:14.461Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:06:34.625Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:06:54.846Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:07:15.043Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:07:35.178Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:07:55.363Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:08:15.495Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:08:35.637Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:08:55.827Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:09:33.757Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:09:53.891Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:10:14.025Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:10:34.172Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:10:54.345Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:11:14.519Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:11:34.678Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:11:54.813Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:12:14.948Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:12:35.103Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:12:55.314Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:13:15.473Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:13:35.627Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:13:55.768Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:14:33.768Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:14:53.904Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:15:14.038Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:15:34.172Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:15:54.307Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:16:14.444Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:16:34.583Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:16:54.718Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:17:14.853Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:17:34.988Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:17:55.123Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:18:15.261Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:18:35.395Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:18:55.517Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:19:33.779Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:19:53.913Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:20:14.360Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:20:35.604Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:20:55.739Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:21:15.872Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:21:36.018Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:21:56.152Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:22:16.288Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:22:36.421Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:22:56.552Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:23:16.742Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:23:37.260Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:23:57.400Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:24:33.828Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:24:54.297Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:25:14.441Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:25:34.583Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:25:54.720Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:26:14.854Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:26:34.990Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:26:55.128Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:27:15.262Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:27:35.398Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:27:55.534Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:28:15.667Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:28:35.801Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:28:55.942Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:29:33.828Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:29:53.960Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:30:14.096Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:30:34.232Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:30:54.377Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:31:14.517Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:31:34.650Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:31:54.793Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:32:14.937Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:32:35.071Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:32:55.204Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:33:15.338Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:33:35.471Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:33:55.605Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:34:33.840Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:34:53.983Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:35:14.128Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:35:34.262Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:35:54.403Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:36:14.529Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:36:34.676Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:36:54.819Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:37:14.956Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:37:35.089Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:37:55.227Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:38:15.359Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:38:35.497Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:38:55.631Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:39:33.851Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:39:53.988Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:40:14.123Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:40:34.258Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:40:54.392Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:41:14.527Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:41:34.670Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:41:54.811Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:42:14.953Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:42:35.089Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:42:55.220Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:43:15.354Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:43:35.485Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:43:55.669Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:44:33.896Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:44:54.045Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:45:14.203Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:45:34.393Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:45:54.564Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:46:14.743Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:46:34.888Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:46:55.016Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:47:15.150Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:47:35.284Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:47:55.452Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:48:15.624Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:48:35.760Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:48:55.905Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:49:33.888Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:49:54.019Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:50:14.152Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:50:34.346Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:50:54.592Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:51:14.746Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:51:34.881Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:51:55.016Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:52:15.154Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:52:35.288Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:52:55.422Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[2024-07-07T18:53:15.556Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)

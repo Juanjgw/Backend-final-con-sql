@@ -1,6 +1,4 @@
-// auth.service.js
-
-const { buscarUsuarioPorEmail, insertarUsuario } = require("./auth.repository");
+const { buscarUsuarioPorEmail, insertarUsuario, buscarOCrearUsuario } = require("./auth.repository");
 const bcrypt = require('bcrypt');
 const { validacionUsuario } = require("./utils/validationUser.util");
 const jwt = require('jsonwebtoken');
@@ -43,7 +41,6 @@ const loginService = async (usuario) => {
 
         validacionUsuario(usuario);
 
-       
         const usuarioExistente = await buscarUsuarioPorEmail(email);
 
         if (!usuarioExistente) {
@@ -69,5 +66,30 @@ const loginService = async (usuario) => {
     }
 };
 
-module.exports = { registerService, loginService };
+const facebookLoginService = async (profile) => {
+    try {
+        const { id, displayName, emails } = profile;
+        const email = emails && emails.length > 0 ? emails[0].value : null;
 
+        if (!email) {
+            throw { status: 400, message: 'No se pudo obtener el email de Facebook' };
+        }
+
+        let usuario = await buscarUsuarioPorEmail(email);
+
+        if (!usuario) {
+            usuario = await insertarUsuario({ email, facebookId: id, nombre: displayName });
+        }
+
+        const token = jwt.sign({ email, user_id: usuario.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
+        return token;
+    } catch (error) {
+        if (error.status) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno del servidor' };
+        }
+    }
+};
+
+module.exports = { registerService, loginService, facebookLoginService };
