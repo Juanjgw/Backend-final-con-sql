@@ -9,4 +9,4 @@ ServiciosRouter.get('/:id', getServicioByIdController);
 ServiciosRouter.delete('/:id', deleteServicioByIdController);
 ServiciosRouter.get('/', getAllServicios);
 
-module.exports = ServiciosRouter;
+module.exports = { ServiciosRouter };

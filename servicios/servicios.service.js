@@ -1,5 +1,4 @@
-const { CustomError } = require("../errors/customErrorManager");
-const { insertarServicio, seleccionarServicioPorId, deleteServicioPorId, seleccionarServicios } = require("./servicios.repository");
+const { insertarServicio, seleccionarServicioPorId, deleteServicioPorId, TodosLosServicios } = require("./servicios.repository");
 const { validarPropiedadesServicio } = require("./utils/validarServicio");
 
 const crearServicio = async (servicio) => {
@@ -16,7 +15,7 @@ const crearServicio = async (servicio) => {
         if (error.status) {
             throw error;
         } else {
-            throw { status: 500, message: error +'Error interno del servidor al crear el servicio' };
+            throw { status: 500, message: 'Error interno del servidor al crear el servicio' };
         }
     }
 };
@@ -49,9 +48,9 @@ const eliminarServicioPorId = async (id) => {
 
 const buscarServicios = async () => {
     try {
-        const servicios = await seleccionarServicios();
+        const servicios = await TodosLosServicios();
         if (servicios.length === 0) {
-            throw new CustomError('No hay servicios disponibles', 404);
+            throw { status: 404, message: 'No hay servicios disponibles' };
         }
         return { ok: true, status: 200, message: 'Servicios obtenidos', servicios: servicios };
     } catch (error) {
