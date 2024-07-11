@@ -51,7 +51,7 @@ const deleteServicioPorId = async (id) => {
 
 const TodosLosServicios = async () => {
     try {
-        const consultaString = 'SELECT * FROM Servicios';
+        const consultaString = 'SELECT s.*, i.* FROM Servicios s LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id'
         const Servicios = await query(consultaString);
         return Servicios;
     } catch (error) {
