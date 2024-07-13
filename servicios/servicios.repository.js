@@ -51,16 +51,21 @@ const deleteServicioPorId = async (id) => {
 
 const TodosLosServicios = async () => {
     try {
-        const consultaString = 'SELECT s.*, i.* FROM Servicios s LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id'
-        const Servicios = await query(consultaString);
-        return Servicios;
+      const consultaString = `
+        SELECT s.id, s.title, s.description, s.contactNumber, GROUP_CONCAT(i.imagen_url SEPARATOR ', ') AS imagen_url
+        FROM Servicios s
+        LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id
+        GROUP BY s.id, s.title, s.description, s.contactNumber;
+      `;
+      const Servicios = await query(consultaString);
+      return Servicios;
     } catch (error) {
-        if (error.status) {
-            throw error;
-        } else {
-            throw { status: 500, message: 'Error interno en el servidor' };
-        }
+      if (error.status) {
+        throw error;
+      } else {
+        throw { status: 500, message: 'Error interno en el servidor' };
+      }
     }
-};
-
+  };
+  
 module.exports = { insertarServicio, seleccionarServicioPorId, deleteServicioPorId, TodosLosServicios };
