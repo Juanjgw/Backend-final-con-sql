@@ -1,23 +1,17 @@
-const PROPIEDADES_NECESARIAS = ['id','title', 'rating', 'contactNumber', 'description']
+const PROPIEDADES_NECESARIAS = ['title', 'description', 'contactNumber'];
 
-const VALIDACIONES_PRODUCTO = {
+const VALIDACIONES_SERVICIOS = {
     'title': {
         validacion: (valor) => {
-            return Boolean(valor) && (typeof(valor) === 'string') && valor.length > 3;
+            return Boolean(valor) && (typeof(valor) === 'string') && valor.length > 15;
         },
-        errorText: 'El título debe ser un valor verdadero con una longitud mayor a 3 caracteres'
-    },
-    'rating': {
-        validacion: (valor) => {
-            return (Boolean(valor) && !isNaN(valor) && valor >= 1 && valor <= 5);
-        },
-        errorText: 'El Rating debe ser un número válido entre 1 y 5'
+        errorText: 'El título debe tener más de 15 caracteres'
     },
     'description': {
         validacion: (valor) => {
-            return (Boolean(valor) && typeof(valor) === 'string' && valor.length > 20);
+            return (Boolean(valor) && typeof(valor) === 'string' && valor.length > 100);
         },
-        errorText: 'La descripción debe ser un string de más de 20 caracteres'
+        errorText: 'La descripción debe ser un string de más de 100 caracteres'
     },
     'contactNumber': {
         validacion: (valor) => {
@@ -29,38 +23,42 @@ const VALIDACIONES_PRODUCTO = {
 
 const validarPropiedadesServicio = (Servicio) => {
     try {
-        const propiedades_Servicio = Object.keys(Servicio)
-        const propiedades_faltantes = []
-        const propiedades_sobrantes = []
+        const propiedades_Servicio = Object.keys(Servicio);
+        const propiedades_faltantes = [];
+        const propiedades_sobrantes = [];
 
         for (let propiedad_necesaria of PROPIEDADES_NECESARIAS) {
             if (!propiedades_Servicio.includes(propiedad_necesaria)) {
-                propiedades_faltantes.push(propiedad_necesaria)
+                propiedades_faltantes.push(propiedad_necesaria);
             }
         }
         if (propiedades_faltantes.length > 0) {
-            throw { status: 400, message: 'Faltan las propiedades [' + propiedades_faltantes.join(', ') + ']' }
+            throw { campo: propiedades_faltantes[0], status: 400, message: 'Falta la propiedad [' + propiedades_faltantes[0] + ']' }
         }
 
         for (let propiedad of propiedades_Servicio) {
             if (!PROPIEDADES_NECESARIAS.includes(propiedad)) {
-                propiedades_sobrantes.push(propiedad)
+                propiedades_sobrantes.push(propiedad);
             }
         }
         if (propiedades_sobrantes.length > 0) {
-            throw { status: 400, message: 'Sobran las propiedades [' + propiedades_sobrantes.join(', ') + ']' }
+            throw { campo: propiedades_sobrantes[0], status: 400, message: 'Sobra la propiedad [' + propiedades_sobrantes[0] + ']' }
         }
 
-        for (let propiedad in VALIDACIONES_PRODUCTO) {
-            let valor = Servicio[propiedad]
-            if (!VALIDACIONES_PRODUCTO[propiedad].validacion(valor)) {
-                throw { status: 400, message: VALIDACIONES_PRODUCTO[propiedad].errorText }
+        for (let propiedad in VALIDACIONES_SERVICIOS) {
+            let valor = Servicio[propiedad];
+            if (!VALIDACIONES_SERVICIOS[propiedad].validacion(valor)) {
+                throw { campo: propiedad, status: 400, message: VALIDACIONES_SERVICIOS[propiedad].errorText }
             }
         }
-        return true
+
+        Servicio.rating = 0;
+
+        return true;
     } catch (error) {
-        throw error
+        throw error;
     }
 }
 
-module.exports = { validarPropiedadesServicio }
+module.exports = { validarPropiedadesServicio };
+

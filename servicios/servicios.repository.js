@@ -1,9 +1,9 @@
 const { query } = require("../config/connection.sql");
 
-const insertarServicio = async ({ id, title, description, contactNumber, rating }) => {
+const insertarServicio = async ({ title, description, contactNumber }) => {
     try {
-        const consultaString = 'INSERT INTO Servicios (id, title, description, contactNumber, rating) VALUES (?, ?, ?, ?, ?)';
-        const valores = [id, title, description, contactNumber, rating];
+        const consultaString = `INSERT INTO Servicios (title, description, contactNumber, rating) VALUES (?, ?, ?, 0)`;
+        const valores = [title, description, contactNumber];
         const resultado = await query(consultaString, valores);
         return resultado.insertId;
     } catch (error) {
