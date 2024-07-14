@@ -1,3 +1,4 @@
+const { seleccionarServicioUsuarioId, EditarServicioPorId } = require("./servicios.repository");
 const { crearServicio, obtenerServicioPorId, eliminarServicioPorId, buscarServicios } = require("./servicios.service");
 
 const postServicioController = async (req, res) => {
@@ -38,4 +39,23 @@ const getAllServicios = async (req, res) => {
     }
 };
 
-module.exports = { postServicioController, getServicioByIdController, deleteServicioByIdController, getAllServicios };
+const getServiciosUsuario = async (req, res) => {
+    try {
+        const result = await seleccionarServicioUsuarioId (req.params.Usuario_ID);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
+    }
+};
+const putServiciosUsuario = async (req, res) => {
+    try {
+        let id = req.params.id
+        let {title, description,contactNumber}=req.body
+        const result = await EditarServicioPorId ({id:id, title:title, description:description, contactNumber:contactNumber});
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
+    }
+};
+
+module.exports = { postServicioController, putServiciosUsuario, getServicioByIdController, deleteServicioByIdController, getAllServicios, getServiciosUsuario };

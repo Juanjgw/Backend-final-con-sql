@@ -1,4 +1,5 @@
 const { validacionExistencia } = require("../helpers/validation.helper");
+const { buscarUsuarioPorEmail } = require("./auth.repository");
 const { registerService, loginService, facebookLoginService } = require("./auth.service");
 const jwt = require('jsonwebtoken');
 
@@ -6,7 +7,8 @@ const loginController = async (req, res) => {
     const { email, password } = req.body;
     try {
         const token = await loginService({ email, password });
-        res.status(200).json({ ok: true, message: 'Usuario logueado', token: token });
+        const usuario= await buscarUsuarioPorEmail(email)
+        res.status(200).json({ ok: true, message: 'Usuario logueado', token: token ,usuario:usuario});
     } catch (error) {
         res.status(error.status).json(error);
     }

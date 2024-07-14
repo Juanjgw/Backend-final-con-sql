@@ -30,6 +30,45 @@ const seleccionarServicioPorId = async (id) => {
     }
 };
 
+const seleccionarServicioUsuarioId = async (id) => {
+    try {
+        const consultaString = 'SELECT * FROM Servicios WHERE Usuario_ID = ? LIMIT 100';
+        const resultado = await query(consultaString, [id]);
+
+        if (resultado.length === 0) {
+            throw { status: 404, message: 'Servicios para Usuario_ID ' + id + ' no encontrados' };
+        } else {
+            return resultado;
+        }
+    } catch (error) {
+        if (error.status === 404) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno en el servidor' };
+        }
+    }
+};
+
+const EditarServicioPorId= async ({id, title, description,contactNumber}) => {
+    try {
+        const consultaString = 'UPDATE Servicios SET title=?,description=?,contactNumber=? WHERE id=? '
+        const resultado = await query(consultaString, [ title, description,contactNumber,id]);
+
+        if (resultado.length === 0) {
+            throw { status: 404, message: 'Servicios para Usuario_ID ' + id + ' no encontrados' };
+        } else {
+            return resultado;
+        }
+    } catch (error) {
+        if (error.status === 404) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno en el servidor' };
+        }
+    }
+};
+
+
 const deleteServicioPorId = async (id) => {
     try {
         const consultaString = 'DELETE FROM Servicios WHERE id = ?';
@@ -68,4 +107,4 @@ const TodosLosServicios = async () => {
     }
   };
   
-module.exports = { insertarServicio, seleccionarServicioPorId, deleteServicioPorId, TodosLosServicios };
+module.exports = { insertarServicio, seleccionarServicioPorId, EditarServicioPorId, deleteServicioPorId, TodosLosServicios, seleccionarServicioUsuarioId };
