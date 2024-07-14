@@ -1,3 +1,9 @@
+const validarNumeroWhatsApp = (numero) => {
+    const regex = /^\+\d{1,3}\d{5,}$/; // Ajusta según sea necesario
+
+    return regex.test(numero);
+};
+
 const PROPIEDADES_NECESARIAS = ['title', 'description', 'contactNumber'];
 
 const VALIDACIONES_SERVICIOS = {
@@ -15,11 +21,11 @@ const VALIDACIONES_SERVICIOS = {
     },
     'contactNumber': {
         validacion: (valor) => {
-            return (Boolean(valor) && valor.length > 10);
+            return (Boolean(valor) && valor.length > 10 && validarNumeroWhatsApp(valor));
         },
-        errorText: 'El Teléfono debe tener más de 10 números'
+        errorText: 'El Teléfono debe ser un número válido de WhatsApp incluir simbolo +54 '
     }
-}
+};
 
 const validarPropiedadesServicio = (Servicio) => {
     try {
@@ -33,7 +39,7 @@ const validarPropiedadesServicio = (Servicio) => {
             }
         }
         if (propiedades_faltantes.length > 0) {
-            throw { campo: propiedades_faltantes[0], status: 400, message: 'Falta la propiedad [' + propiedades_faltantes[0] + ']' }
+            throw { campo: propiedades_faltantes[0], status: 400, message: 'Falta la propiedad [' + propiedades_faltantes[0] + ']' };
         }
 
         for (let propiedad of propiedades_Servicio) {
@@ -42,13 +48,13 @@ const validarPropiedadesServicio = (Servicio) => {
             }
         }
         if (propiedades_sobrantes.length > 0) {
-            throw { campo: propiedades_sobrantes[0], status: 400, message: 'Sobra la propiedad [' + propiedades_sobrantes[0] + ']' }
+            throw { campo: propiedades_sobrantes[0], status: 400, message: 'Sobra la propiedad [' + propiedades_sobrantes[0] + ']' };
         }
 
         for (let propiedad in VALIDACIONES_SERVICIOS) {
             let valor = Servicio[propiedad];
             if (!VALIDACIONES_SERVICIOS[propiedad].validacion(valor)) {
-                throw { campo: propiedad, status: 400, message: VALIDACIONES_SERVICIOS[propiedad].errorText }
+                throw { campo: propiedad, status: 400, message: VALIDACIONES_SERVICIOS[propiedad].errorText };
             }
         }
 
@@ -58,7 +64,6 @@ const validarPropiedadesServicio = (Servicio) => {
     } catch (error) {
         throw error;
     }
-}
+};
 
 module.exports = { validarPropiedadesServicio };
-
