@@ -15,17 +15,35 @@ async function subirImagenServicioFTP(file, fileName) {
             password: process.env.IMAGEN_PASS,
             secure: true,
             secureOptions: {
-                rejectUnauthorized: true // Desactiva la validación del certificado para desarrollo
+                rejectUnauthorized: false // Desactiva la validación del certificado para desarrollo
             }
         });
+
+        // Verificar y crear el directorio si no existe
+        const remotePath = process.env.IMAGEN_DIRECTORIO;
+        const directories = remotePath.split('/');
+        let path = '';
+        for (const dir of directories) {
+            if (dir) {
+                path += `/${dir}`;
+                try {
+                    await client.send(`MKD ${path}`);
+                    console.log(`Directorio creado: ${path}`);
+                } catch (err) {
+                    if (!err.message.includes('550')) { // Ignorar error si el directorio ya existe
+                        throw err;
+                    }
+                }
+            }
+        }
 
         // Convertir el archivo en un flujo de datos
         const bufferStream = new stream.PassThrough();
         bufferStream.end(file.data);
 
         // Subir la imagen desde el buffer al servidor
-        await client.uploadFrom(bufferStream, process.env.IMAGEN_DIRECTORIO + fileName);
-        console.log(`Imagen subida correctamente a ${process.env.IMAGEN_DIRECTORIO + fileName}`);
+        await client.uploadFrom(bufferStream, `${remotePath}/${fileName}`);
+        console.log(`Imagen subida correctamente a ${remotePath}/${fileName}`);
     } catch (err) {
         console.error('Error al subir la imagen:', err);
     } finally {
@@ -39,6 +57,11 @@ const subirImagenServicio = async (req, res) => {
         // Obtener el ID del servicio y la imagen del cuerpo de la solicitud
         const { servicio_id } = req.params;
         const { imagen } = req.files;
+
+        // Verificar si se recibió la imagen
+        if (!imagen) {
+            return res.status(400).json({ message: 'No se recibió ninguna imagen' });
+        }
 
         // Generar un nombre único para la imagen
         const nombreImagen = `${uuidv4()}.${imagen.name.split('.').pop()}`;
@@ -59,4 +82,3 @@ const subirImagenServicio = async (req, res) => {
 };
 
 module.exports = { subirImagenServicio };
-
