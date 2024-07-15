@@ -8,7 +8,7 @@ passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
     callbackURL: "http://localhost:4000/api/auth/facebook/callback",
-    profileFields: ['id', 'displayName', 'emails']
+    profileFields: ['id', 'name']
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         const token = await facebookLoginService(profile);
@@ -30,9 +30,7 @@ passport.deserializeUser(async (token, done) => {
     }
 });
 
-router.get('/',
-    passport.authenticate('facebook', { scope: ['email'] })
-);
+
 
 router.get('/callback',
     passport.authenticate('facebook', {
