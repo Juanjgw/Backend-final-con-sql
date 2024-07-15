@@ -5,7 +5,7 @@ const User = require('./models/User'); // Asegúrate de tener un modelo de usuar
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:4040/auth/facebook/callback", // Actualiza esto según sea necesario
+    callbackURL: "http://localhost:4041/auth/facebook/callback", // Actualiza esto según sea necesario
     profileFields: ['id', 'emails', 'name'] // Esto obtiene el perfil básico de Facebook
   },
   async (accessToken, refreshToken, profile, done) => {

@@ -46,6 +46,7 @@ async function subirImagenServicioFTP(file, fileName) {
         console.log(`Imagen subida correctamente a ${remotePath}/${fileName}`);
     } catch (err) {
         console.error('Error al subir la imagen:', err);
+        throw err; // Reenviar el error para manejarlo en la función que llama a subirImagenServicioFTP
     } finally {
         client.close();
     }
@@ -56,29 +57,31 @@ const subirImagenServicio = async (req, res) => {
     try {
         // Obtener el ID del servicio y la imagen del cuerpo de la solicitud
         const { servicio_id } = req.params;
-        const { imagen } = req.files;
+        const { images } = req.files;
 
-        // Verificar si se recibió la imagen
-        if (!imagen) {
-            return res.status(400).json({ message: 'No se recibió ninguna imagen' });
+        // Verificar si se recibieron las imágenes
+        if (!images || !Array.isArray(images)) {
+            return res.status(400).json({ message: 'No se recibieron imágenes válidas' });
         }
 
-        // Generar un nombre único para la imagen
-        const nombreImagen = `${uuidv4()}.${imagen.name.split('.').pop()}`;
+        // Subir cada imagen al servidor FTP
+        for (let i = 0; i < images.length; i++) {
+            const imagen = images[i];
+            const nombreImagen = `${uuidv4()}.${imagen.name.split('.').pop()}`;
+            await subirImagenServicioFTP(imagen, nombreImagen);
 
-        // Subir la imagen al servidor FTP
-        await subirImagenServicioFTP(imagen, nombreImagen);
+            // Guardar el nombre de la imagen en la base de datos (debe ser adaptado según tu estructura)
+            // const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
+            // const valores = [servicio_id, `${process.env.IMAGEN_HOSTNAME}/Servicios/${nombreImagen}`];
+            // await query(consultaString, valores);
+        }
 
-        // Guardar el nombre de la imagen en la base de datos (comentado)
-        // const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
-        // const valores = [servicio_id, `${process.env.IMAGEN_HOSTNAME}/Servicios/${nombreImagen}`];
-        // await query(consultaString, valores);
-
-        res.status(200).json({ message: 'Imagen subida y registrada correctamente' });
+        res.status(200).json({ message: 'Imágenes subidas y registradas correctamente' });
     } catch (error) {
         console.error('Error al subir la imagen:', error);
-        res.status(500).json({ message: 'Error interno al subir la imagen' });
+        res.status(500).json({ message: 'Error interno al subir las imágenes' });
     }
 };
 
 module.exports = { subirImagenServicio };
+
