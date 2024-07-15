@@ -4,12 +4,12 @@ const cors = require('cors');
 dotenv.config();
 const passport = require('passport');
 const session = require('express-session');
-
+const fileUpload = require('express-fileupload');
 const { database } = require('./config/connection.sql');
 const { authRouter } = require('./auth/auth.router');
 const { productRouter } = require('./products/products.router');
 const { cartsRouter } = require('./carts/carts.router');
-const { ServiciosRouter } = require('./servicios/servicios.router');
+const { ServiciosRouter } = require('./servicios/Servicios.router');
 const facebookAuthRouter = require('./auth/facebook.auth.router');
 
 console.log({
@@ -25,6 +25,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(fileUpload());
 
 // Configura la sesión
 app.use(session({ secret: 'your secret', resave: false, saveUninitialized: true }));
