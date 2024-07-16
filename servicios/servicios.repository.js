@@ -13,7 +13,13 @@ const insertarServicio = async ({ title, description, contactNumber, Usuario_ID 
 
 const seleccionarServicioPorId = async (id) => {
     try {
-        const consultaString = 'SELECT * FROM Servicios WHERE id = ?';
+        const consultaString = `
+  SELECT s.id, s.title, s.description, s.rating, s.contactNumber, GROUP_CONCAT(i.imagen_url SEPARATOR ', ') AS imagen_url 
+  FROM Servicios s 
+  LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id 
+  WHERE s.id = ?
+  GROUP BY s.id, s.title, s.description, s.rating, s.contactNumber;
+`;
         const resultado = await query(consultaString, [id]);
 
         if (resultado.length === 0) {
