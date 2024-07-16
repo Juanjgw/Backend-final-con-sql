@@ -10,7 +10,7 @@ ServiciosRouter.get('/', getAllServicios);
 ServiciosRouter.get('/:id', getServicioByIdController);
 ServiciosRouter.delete('/:id', deleteServicioByIdController);
 ServiciosRouter.put('/:id', putServiciosUsuario);
-ServiciosRouter.post('/:servicio_id/imagen', subirImagenServicio);
+ServiciosRouter.post('/:servicio_id/imagenes', subirImagenServicio);
 ServiciosRouter.get('/servicios_usuario/:Usuario_ID', getServiciosUsuario);
 
 module.exports = { ServiciosRouter };

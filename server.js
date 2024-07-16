@@ -7,15 +7,11 @@ const session = require('express-session');
 const fileUpload = require('express-fileupload');
 const { database } = require('./config/connection.sql');
 const { authRouter } = require('./auth/auth.router');
-const { productRouter } = require('./products/products.router');
-const { cartsRouter } = require('./carts/carts.router');
 const { ServiciosRouter } = require('./servicios/Servicios.router');
 const facebookAuthRouter = require('./auth/facebook.auth.router');
 
 console.log({
     authRouter,
-    productRouter,
-    cartsRouter,
     ServiciosRouter,
     facebookAuthRouter
 });
@@ -37,8 +33,6 @@ app.use(passport.session());
 // Rutas
 app.use('/api/auth', authRouter);
 app.use('/api/auth/facebook', facebookAuthRouter);
-app.use('/api/products', productRouter);
-app.use('/api/carts', cartsRouter);
 app.use('/api/servicios', ServiciosRouter);
 
 app.listen(PORT, () => {

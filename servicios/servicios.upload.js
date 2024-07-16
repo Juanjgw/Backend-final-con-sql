@@ -70,9 +70,9 @@ const subirImagenServicio = async (req, res) => {
         await subirImagenServicioFTP(imagen, nombreImagen);
 
         // Guardar el nombre de la imagen en la base de datos (comentado)
-        // const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
-        // const valores = [servicio_id, `${process.env.IMAGEN_HOSTNAME}/Servicios/${nombreImagen}`];
-        // await query(consultaString, valores);
+         const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
+         const valores = [servicio_id, `${nombreImagen}`];
+         await query(consultaString, valores);
 
         res.status(200).json({ message: 'Imagen subida y registrada correctamente' });
     } catch (error) {

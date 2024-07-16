@@ -4,7 +4,7 @@ const validarNumeroWhatsApp = (numero) => {
     return regex.test(numero);
 };
 
-const PROPIEDADES_NECESARIAS = ['title', 'description', 'contactNumber'];
+const PROPIEDADES_NECESARIAS = ['title', 'description', 'contactNumber','Usuario_ID'];
 
 const VALIDACIONES_SERVICIOS = {
     'title': {
@@ -22,6 +22,12 @@ const VALIDACIONES_SERVICIOS = {
     'contactNumber': {
         validacion: (valor) => {
             return (Boolean(valor) && valor.length > 10 && validarNumeroWhatsApp(valor));
+        },
+        errorText: 'El Teléfono debe ser un número válido de WhatsApp incluir simbolo +54 '
+    },
+    'Usuario_ID': {
+        validacion: (valor) => {
+            return (Boolean(valor) && typeof valor === 'number');
         },
         errorText: 'El Teléfono debe ser un número válido de WhatsApp incluir simbolo +54 '
     }
