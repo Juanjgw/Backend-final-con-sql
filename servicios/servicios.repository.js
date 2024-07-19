@@ -38,7 +38,17 @@ const seleccionarServicioPorId = async (id) => {
 
 const seleccionarServicioUsuarioId = async (id) => {
     try {
-        const consultaString = 'SELECT * FROM Servicios WHERE Usuario_ID = ? LIMIT 100';
+        const consultaString = `
+            SELECT 
+                s.id, s.title, s.description, s.contactNumber, i.imagen_url
+            FROM 
+                Servicios s
+            LEFT JOIN 
+                ImagenesServicios i ON s.id = i.Servicio_id
+            WHERE 
+                s.Usuario_ID = ?
+            LIMIT 100
+        `;
         const resultado = await query(consultaString, [id]);
 
         if (resultado.length === 0) {
@@ -54,6 +64,7 @@ const seleccionarServicioUsuarioId = async (id) => {
         }
     }
 };
+
 
 const EditarServicioPorId= async ({id, title, description,contactNumber}) => {
     try {
