@@ -51,6 +51,35 @@ async function subirImagenServicioFTP(file, fileName) {
     }
 }
 
+// Función para eliminar una imagen del servidor FTP
+async function eliminarImagenServicioFTP(fileName) {
+    const client = new Client();
+    client.ftp.verbose = true;
+    try {
+        // Acceder al servidor FTP
+        await client.access({
+            host: process.env.IMAGEN_HOSTNAME,
+            user: process.env.IMAGEN_USUARIO,
+            password: process.env.IMAGEN_PASS,
+            secure: true,
+            secureOptions: {
+                rejectUnauthorized: false // Desactiva la validación del certificado para desarrollo
+            }
+        });
+
+        // Ruta del directorio remoto donde se almacenan las imágenes
+        const remotePath = process.env.IMAGEN_DIRECTORIO;
+
+        // Eliminar la imagen del servidor
+        await client.remove(`${remotePath}/${fileName}`);
+        console.log(`Imagen eliminada correctamente de ${remotePath}/${fileName}`);
+    } catch (err) {
+        console.error('Error al eliminar la imagen:', err);
+    } finally {
+        client.close();
+    }
+}
+
 // Función para manejar la subida de imagen del servicio
 const subirImagenServicio = async (req, res) => {
     try {
@@ -69,10 +98,10 @@ const subirImagenServicio = async (req, res) => {
         // Subir la imagen al servidor FTP
         await subirImagenServicioFTP(imagen, nombreImagen);
 
-        // Guardar el nombre de la imagen en la base de datos (comentado)
-         const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
-         const valores = [servicio_id, `${nombreImagen}`];
-         await query(consultaString, valores);
+        // Guardar el nombre de la imagen en la base de datos
+        const consultaString = `INSERT INTO ImagenesServicios (Servicio_id, imagen_url) VALUES (?, ?)`;
+        const valores = [servicio_id, `${nombreImagen}`];
+        await query(consultaString, valores);
 
         res.status(200).json({ message: 'Imagen subida y registrada correctamente' });
     } catch (error) {
@@ -81,4 +110,4 @@ const subirImagenServicio = async (req, res) => {
     }
 };
 
-module.exports = { subirImagenServicio };
+module.exports = { subirImagenServicio, eliminarImagenServicioFTP };

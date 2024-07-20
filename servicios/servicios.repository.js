@@ -1,9 +1,10 @@
 const { query } = require("../config/connection.sql");
+const { eliminarImagenServicioFTP } = require("./servicios.upload.js"); 
 
 const insertarServicio = async ({ title, description, contactNumber, Usuario_ID }) => {
     try {
         const consultaString = `INSERT INTO Servicios (title, description, contactNumber, rating, Usuario_ID) VALUES (?, ?, ?, 0,?)`;
-        const valores = [title, description, contactNumber,Usuario_ID];
+        const valores = [title, description, contactNumber, Usuario_ID];
         const resultado = await query(consultaString, valores);
         return resultado.insertId;
     } catch (error) {
@@ -61,11 +62,10 @@ const seleccionarServicioUsuarioId = async (id) => {
     }
 };
 
-
-const EditarServicioPorId= async ({id, title, description,contactNumber}) => {
+const EditarServicioPorId = async ({ id, title, description, contactNumber }) => {
     try {
-        const consultaString = 'UPDATE Servicios SET title=?,description=?,contactNumber=? WHERE id=? '
-        const resultado = await query(consultaString, [ title, description,contactNumber,id]);
+        const consultaString = 'UPDATE Servicios SET title=?, description=?, contactNumber=? WHERE id=?';
+        const resultado = await query(consultaString, [title, description, contactNumber, id]);
 
         if (resultado.length === 0) {
             throw { status: 404, message: 'Servicios para Usuario_ID ' + id + ' no encontrados' };
@@ -81,10 +81,20 @@ const EditarServicioPorId= async ({id, title, description,contactNumber}) => {
     }
 };
 
-
 const deleteServicioPorId = async (id) => {
     try {
-        // Eliminar las imágenes relacionadas con el servicio
+        // Obtener el nombre de la imagen desde la base de datos
+        const consultaImagenUrl = 'SELECT imagen_url FROM ImagenesServicios WHERE Servicio_id = ?';
+        const resultadosImagenes = await query(consultaImagenUrl, [id]);
+
+        if (resultadosImagenes.length > 0) {
+            // Eliminar las imágenes asociadas del servidor FTP
+            for (const imagen of resultadosImagenes) {
+                await eliminarImagenServicioFTP(imagen.imagen_url);
+            }
+        }
+
+        // Eliminar las imágenes relacionadas con el servicio de la base de datos
         const consultaImagenes = 'DELETE FROM ImagenesServicios WHERE Servicio_id = ?';
         await query(consultaImagenes, [id]);
 
@@ -106,7 +116,6 @@ const deleteServicioPorId = async (id) => {
     }
 };
 
-
 const TodosLosServicios = async () => {
     try {
         const consultaString = `
@@ -115,15 +124,15 @@ const TodosLosServicios = async () => {
         LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id 
         GROUP BY s.id, s.title, s.description, s.rating, s.contactNumber;
       `;
-      const Servicios = await query(consultaString);
-      return Servicios;
+        const Servicios = await query(consultaString);
+        return Servicios;
     } catch (error) {
-      if (error.status) {
-        throw error;
-      } else {
-        throw { status: 500, message: 'Error interno en el servidor' };
-      }
+        if (error.status) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno en el servidor' };
+        }
     }
-  };
-  
+};
+
 module.exports = { insertarServicio, seleccionarServicioPorId, EditarServicioPorId, deleteServicioPorId, TodosLosServicios, seleccionarServicioUsuarioId };
