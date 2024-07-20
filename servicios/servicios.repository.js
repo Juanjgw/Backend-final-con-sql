@@ -52,16 +52,12 @@ const seleccionarServicioUsuarioId = async (id) => {
         const resultado = await query(consultaString, [id]);
 
         if (resultado.length === 0) {
-            throw { status: 404, message: 'Servicios para Usuario_ID ' + id + ' no encontrados' };
+            return []; // Devuelve un array vacío en lugar de lanzar un error
         } else {
             return resultado;
         }
     } catch (error) {
-        if (error.status === 404) {
-            throw error;
-        } else {
-            throw { status: 500, message: 'Error interno en el servidor' };
-        }
+        throw { status: 500, message: 'Error interno en el servidor' };
     }
 };
 
@@ -88,8 +84,13 @@ const EditarServicioPorId= async ({id, title, description,contactNumber}) => {
 
 const deleteServicioPorId = async (id) => {
     try {
-        const consultaString = 'DELETE FROM Servicios WHERE id = ?';
-        const resultado = await query(consultaString, [id]);
+        // Eliminar las imágenes relacionadas con el servicio
+        const consultaImagenes = 'DELETE FROM ImagenesServicios WHERE Servicio_id = ?';
+        await query(consultaImagenes, [id]);
+
+        // Eliminar el servicio
+        const consultaServicio = 'DELETE FROM Servicios WHERE id = ?';
+        const resultado = await query(consultaServicio, [id]);
 
         if (resultado.affectedRows === 0) {
             throw { status: 404, message: 'Servicio con id ' + id + ' no existe' };
@@ -104,6 +105,7 @@ const deleteServicioPorId = async (id) => {
         }
     }
 };
+
 
 const TodosLosServicios = async () => {
     try {
