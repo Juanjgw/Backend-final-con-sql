@@ -1,3 +1,4 @@
+//auth\auth.controller.js
 const { validacionExistencia } = require("../helpers/validation.helper");
 const { buscarUsuarioPorEmail } = require("./auth.repository");
 const { registerService, loginService, facebookLoginService } = require("./auth.service");

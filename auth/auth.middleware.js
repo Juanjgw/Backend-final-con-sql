@@ -1,3 +1,4 @@
+//auth\auth.middleware.js
 const { validacionExistencia } = require("../helpers/validation.helper");
 const jwt = require('jsonwebtoken');
 

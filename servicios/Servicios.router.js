@@ -1,6 +1,15 @@
+//Servicios.router.js
 const express = require('express');
-const { postServicioController, getServicioByIdController, deleteServicioByIdController, getAllServicios, getServiciosUsuario, putServiciosUsuario } = require('./servicios.controller');
-const { subirImagenServicio } = require('./servicios.upload'); // Importamos la función para subir imágenes
+const { 
+    postServicioController, 
+    getServicioByIdController, 
+    deleteServicioByIdController, 
+    getAllServicios, 
+    getServiciosUsuario, 
+    putServiciosUsuario, 
+    getImagenesPorServicioController 
+} = require('./servicios.controller');
+const { subirImagenServicio } = require('./servicios.upload');
 
 const ServiciosRouter = express.Router();
 
@@ -12,5 +21,6 @@ ServiciosRouter.delete('/:id', deleteServicioByIdController);
 ServiciosRouter.put('/:id', putServiciosUsuario);
 ServiciosRouter.post('/:servicio_id/imagenes', subirImagenServicio);
 ServiciosRouter.get('/servicios_usuario/:Usuario_ID', getServiciosUsuario);
+ServiciosRouter.get('/servicios/:id/imagenes', getImagenesPorServicioController);
 
 module.exports = { ServiciosRouter };

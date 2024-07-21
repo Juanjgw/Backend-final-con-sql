@@ -1,4 +1,11 @@
-const { insertarServicio, seleccionarServicioPorId, deleteServicioPorId, TodosLosServicios } = require("./servicios.repository");
+//servicios.service.js
+const { 
+    insertarServicio, 
+    seleccionarServicioPorId, 
+    deleteServicioPorId, 
+    TodosLosServicios, 
+    seleccionarServicioPorIdCarrucel // Nueva función para obtener imágenes en carrusel
+} = require("./servicios.repository");
 const { validarPropiedadesServicio } = require("./utils/validarServicio");
 
 const crearServicio = async (servicio) => {
@@ -46,7 +53,6 @@ const eliminarServicioPorId = async (id) => {
     }
 };
 
-
 const buscarServicios = async () => {
     try {
         const servicios = await TodosLosServicios();
@@ -59,4 +65,24 @@ const buscarServicios = async () => {
     }
 };
 
-module.exports = { crearServicio, obtenerServicioPorId, eliminarServicioPorId, buscarServicios };
+// Nueva función para obtener las imágenes de un servicio en formato de carrusel
+const obtenerImagenesPorServicio = async (id) => {
+    try {
+        const imagenes = await seleccionarServicioPorIdCarrucel(id);
+        return { ok: true, status: 200, imagenes };
+    } catch (error) {
+        if (error.status) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno del servidor al obtener las imágenes del servicio' };
+        }
+    }
+};
+
+module.exports = { 
+    crearServicio, 
+    obtenerServicioPorId, 
+    eliminarServicioPorId, 
+    buscarServicios, 
+    obtenerImagenesPorServicio // Exportar la nueva función
+};

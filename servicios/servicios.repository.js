@@ -1,3 +1,4 @@
+//servicios.repository.js
 const { query } = require("../config/connection.sql");
 const { eliminarImagenServicioFTP } = require("./servicios.upload.js"); 
 
@@ -61,6 +62,39 @@ const seleccionarServicioUsuarioId = async (id) => {
         throw { status: 500, message: 'Error interno en el servidor' };
     }
 };
+
+const seleccionarServicioPorIdCarrucel = async (id) => {
+    try {
+        const consultaString = `
+            SELECT s.id, s.title, s.description, s.rating, s.contactNumber, i.imagen_url, i.Orden
+            FROM Servicios s
+            LEFT JOIN ImagenesServicios i ON s.id = i.Servicio_id
+            WHERE s.id = ?
+            ORDER BY i.Orden ASC;
+        `;
+        const resultado = await query(consultaString, [id]);
+
+        if (resultado.length === 0) {
+            throw { status: 404, message: 'Servicio con id ' + id + ' no encontrado' };
+        } else {
+            // Agrupamos las imágenes en un array para el campo imagen_url
+            const servicio = resultado[0];
+            servicio.imagenes = resultado.map(row => row.imagen_url).filter(url => url !== null);
+
+            // Elimina las imágenes del servicio del objeto resultante
+            delete servicio.imagen_url;
+
+            return servicio;
+        }
+    } catch (error) {
+        if (error.status === 404) {
+            throw error;
+        } else {
+            throw { status: 500, message: 'Error interno en el servidor' };
+        }
+    }
+};
+
 
 const EditarServicioPorId = async ({ id, title, description, contactNumber }) => {
     try {
@@ -135,4 +169,4 @@ const TodosLosServicios = async () => {
     }
 };
 
-module.exports = { insertarServicio, seleccionarServicioPorId, EditarServicioPorId, deleteServicioPorId, TodosLosServicios, seleccionarServicioUsuarioId };
+module.exports = { insertarServicio, seleccionarServicioPorId, seleccionarServicioPorIdCarrucel, EditarServicioPorId, deleteServicioPorId, TodosLosServicios, seleccionarServicioUsuarioId };

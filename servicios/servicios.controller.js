@@ -1,5 +1,15 @@
-const { seleccionarServicioUsuarioId, EditarServicioPorId } = require("./servicios.repository");
-const { crearServicio, obtenerServicioPorId, eliminarServicioPorId, buscarServicios } = require("./servicios.service");
+//servicios.controller.js
+const { 
+    seleccionarServicioUsuarioId, 
+    EditarServicioPorId, 
+    seleccionarServicioPorIdCarrucel 
+} = require("./servicios.repository");
+const { 
+    crearServicio, 
+    obtenerServicioPorId, 
+    eliminarServicioPorId, 
+    buscarServicios 
+} = require("./servicios.service");
 
 const postServicioController = async (req, res) => {
     try {
@@ -41,21 +51,41 @@ const getAllServicios = async (req, res) => {
 
 const getServiciosUsuario = async (req, res) => {
     try {
-        const result = await seleccionarServicioUsuarioId (req.params.Usuario_ID);
-        res.status(200).json(result);
-    } catch (error) {
-        res.status(error.status || 500).json({ message: error.message });
-    }
-};
-const putServiciosUsuario = async (req, res) => {
-    try {
-        let id = req.params.id
-        let {title, description,contactNumber}=req.body
-        const result = await EditarServicioPorId ({id:id, title:title, description:description, contactNumber:contactNumber});
+        const result = await seleccionarServicioUsuarioId(req.params.Usuario_ID);
         res.status(200).json(result);
     } catch (error) {
         res.status(error.status || 500).json({ message: error.message });
     }
 };
 
-module.exports = { postServicioController, putServiciosUsuario, getServicioByIdController, deleteServicioByIdController, getAllServicios, getServiciosUsuario };
+const putServiciosUsuario = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const { title, description, contactNumber } = req.body;
+        const result = await EditarServicioPorId({ id, title, description, contactNumber });
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
+    }
+};
+
+// Nuevo controlador para obtener las imágenes de un servicio
+const getImagenesPorServicioController = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const imagenes = await seleccionarServicioPorIdCarrucel(id);
+        res.status(200).json(imagenes);
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message || 'Error interno en el servidor' });
+    }
+};
+
+module.exports = { 
+    postServicioController, 
+    putServiciosUsuario, 
+    getServicioByIdController, 
+    deleteServicioByIdController, 
+    getAllServicios, 
+    getServiciosUsuario, 
+    getImagenesPorServicioController // Exportar el nuevo controlador sin afectar a los antiguos
+};
