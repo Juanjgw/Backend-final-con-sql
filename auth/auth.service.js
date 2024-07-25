@@ -48,7 +48,7 @@ const loginService = async (usuario) => {
         if (!esCorrecta) {
             throw { status: 400, message: 'Contraseña incorrecta' };
         } else {
-            const token = jwt.sign({ email, user_id: usuarioExistente.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
+            const token = jwt.sign({ email, user_id: usuarioExistente.id }, process.env.JWT_SECRET_KEY, { expiresIn: '5d' });
             return token;
         }
     } catch (error) {
@@ -75,7 +75,7 @@ const facebookLoginService = async (profile) => {
             usuario = await insertarUsuario({ email, facebookId: id, nombre: displayName });
         }
 
-        const token = jwt.sign({ email, user_id: usuario.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
+        const token = jwt.sign({ email, user_id: usuario.id }, process.env.JWT_SECRET_KEY, { expiresIn: '5d' });
         return token;
     } catch (error) {
         if (error.status) {

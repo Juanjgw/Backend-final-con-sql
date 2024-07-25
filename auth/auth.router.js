@@ -1,3 +1,4 @@
+//auth.router.js
 const express = require('express')
 const { loginController, registerController, verifyTokenController } = require('./auth.controller')
 
