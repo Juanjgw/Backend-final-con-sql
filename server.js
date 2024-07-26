@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const path = require('path'); // Asegúrate de requerir el módulo 'path'
 dotenv.config();
 const passport = require('passport');
 const session = require('express-session');
@@ -16,7 +17,7 @@ console.log({
     facebookAuthRouter
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4041;
 const app = express();
 
 app.use(cors());
@@ -30,10 +31,18 @@ app.use(session({ secret: 'your secret', resave: false, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Rutas
+// Rutas API
 app.use('/api/auth', authRouter);
 app.use('/api/auth/facebook', facebookAuthRouter);
 app.use('/api/servicios', ServiciosRouter);
+
+// Sirve archivos estáticos del frontend
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+// Maneja todas las rutas con el archivo `index.html`
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+});
 
 app.listen(PORT, () => {
     console.log('Nuestra aplicación se ejecuta en el puerto: ' + PORT);
